@@ -3045,6 +3045,11 @@ module.factory(
         "find": {
           isArray: true,
           url: urlBase + "/Translators",
+          // url: urlBase + '/Translators/?filter= {"where": { "language_combination.source":'
+          //                                       + $scope.searchSourceLang + 
+          //                                       ', "language_combination.target":'+ $scope.searchTargetLang +
+          //                                       ', "specialization":'+ $scope.searchSpec +
+          //                                       '} }',
           method: "GET"
         },
 
