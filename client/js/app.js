@@ -22,6 +22,30 @@ var app = angular
         url: '/translators_search_results',
         templateUrl: 'views/translators_search_results.html',
         controller: 'TranslatorsSearchController'
+      })
+
+      .state('forbidden', {
+        url: '/forbidden',
+        templateUrl: 'views/forbidden.html',
+      })
+      .state('login', {
+        url: '/login',
+        templateUrl: 'views/login.html',
+        controller: 'AuthLoginController'
+      })
+      .state('logout', {
+        url: '/logout',
+        controller: 'AuthLogoutController'
+      })
+
+      .state('sign-up', {
+        url: '/sign-up',
+        templateUrl: 'views/sign-up-form.html',
+        controller: 'SignUpController',
+      })
+      .state('sign-up-success', {
+        url: '/sign-up/success',
+        templateUrl: 'views/sign-up-success.html'
       });
 
     $urlRouterProvider.otherwise('translators');

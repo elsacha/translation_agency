@@ -43,11 +43,11 @@ angular
 
   
    $http.
-    get('api/Translators/?filter= {"where": { "language_combination.source":'
+    get('api/Translators/?filter= {"where": { "language_combination.source": "'
                                                 + $scope.searchSourceLang + 
-                                                ', "language_combination.target":'+ $scope.searchTargetLang +
-                                                ', "specialization":'+ $scope.searchSpec +
-                                                '} }').
+                                                '", "language_combination.target": "'+ $scope.searchTargetLang +
+                                                '", "specialization": "'+ $scope.searchSpec +
+                                                '"} }').
     success(function(data) {
       console.log(JSON.stringify(data));
       //$scope.target = JSON.stringify(data);
