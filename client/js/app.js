@@ -67,3 +67,13 @@ var app = angular
 //         controller: 'TranslatorsController'
 //     })
 // });
+
+// app.directive("showTranslator", function() {
+//    return {
+//        restrict: 'AE', //restrict to attribute, element
+//        templateUrl: 'client/js/directives/show_translator.html',
+//        //template: '<h3>test</h3>',
+//        replace: true
+//    }
+// });
+
