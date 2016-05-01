@@ -4,3 +4,9 @@ body {
 .glyphicon-remove:hover {
   cursor:pointer
 }
+
+ul.nav a:hover { 
+	color: #000000 !important;
+	background: #A9AEB0 !important;
+}
+

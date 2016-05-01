@@ -2,23 +2,7 @@
 <div class="row row-content" ng-controller="TranslatorsController">
 	<ul class="media-list">
         <li class="media" ng-repeat="translator in allTranslators">
-           <!-- <div class="media-left media-middle">
-                <img class="media-object img-thumbnail"
-                ng-src="./images/ava1.png" alt="Translator">
-            </div>
-            <div class="media-body">
-                <h3 class="media-heading">{{translator.firstName}}&nbsp;{{translator.lastName}}</h3>
-                <h4>Language combination</h4>
-                <ul>
-                     <li ng-repeat="comb in translator.language_combination">from &nbsp;{{comb.source}}&nbsp; to {{comb.target}}</li>
-                </ul>
-                <h4>Specialization:</h4>
-                <ul>
-                 <li ng-repeat="spec in translator.specialization">{{spec}}</li>
-                </ul>
-            </div>-->
             <show-translator></show-translator>
-           </li>
-     <!-- {{allTranslators}} -->
+        </li>
     </ul>
 </div>

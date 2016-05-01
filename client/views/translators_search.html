@@ -3,9 +3,26 @@
     <div class="col-md-6 col-md-offset-3">
         <h4>Translators search</h4>
         <div class="form-group">
-            <input type="text" ng-model="searchSourceLang" class="form-control" />
-            <input type="text" ng-model="searchTargetLang" class="form-control" />
+            <!-- <input type="text" ng-model="searchSourceLang" class="form-control" /> -->
+            Translates from:
+            <select name="searchSource" ng-model="searchSourceLang">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Russian">Russian</option>
+                <option value="Spanish">Spanish</option>
+            </select>
+            <!-- <input type="text" ng-model="searchTargetLang" class="form-control" /> -->
+            To:
+            <select name="searchTarget" ng-model="searchSourceLang">
+                <option value="English">English</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Russian">Russian</option>
+                <option value="Spanish">Spanish</option>
+            </select>
             <!-- <input type="text" ng-model="searchSpec" class="form-control" /> -->
+            Specialization:
             <select name="searchSpec" ng-model="searchSpec">
             	<option value="computer">Computer</option>
 				<option value="legal">Legal</option>
