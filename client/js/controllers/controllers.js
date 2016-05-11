@@ -41,6 +41,8 @@ angular
        searchService.searchSpec = $scope.searchSpec; 
     });
 
+    
+
   
    $http.
     get('api/Translators/?filter= {"where": { "language_combination.source": "'
@@ -55,6 +57,20 @@ angular
     });      
      
 
-  }]);
+  }])
+
+.controller('TabController', ['$scope', function($scope) {
+    $scope.tab = 1;
+
+    $scope.setTab = function(newTab){
+      $scope.tab = newTab;
+    };
+
+    $scope.isSet = function(tabNum){
+      return $scope.tab === tabNum;
+    };
+    }])
+
+;
 
 

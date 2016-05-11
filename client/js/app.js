@@ -6,6 +6,11 @@ var app = angular
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {
     $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: 'views/home.html',
+        controller: 'TabController'
+      })
       .state('translators', {
         url: '/translators',
         templateUrl: 'views/translators.html',

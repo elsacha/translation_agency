@@ -9,7 +9,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
   module.exports = "lbServices";
 }
 
-(function(window, angular, undefined) {'use strict';
+(function(window, angular, undefined) {//'use strict';
 
 var urlBase = "/api";
 var authHeader = 'authorization';
