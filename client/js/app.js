@@ -51,7 +51,14 @@ var app = angular
       .state('sign-up-success', {
         url: '/sign-up/success',
         templateUrl: 'views/sign-up-success.html'
-      });
+      })
+
+      .state('translator_contact', {
+        url: '/translator_contact',
+        templateUrl: 'views/translator_contact.html'
+        //controller: 'ContactTranslatorController'
+      })
+      ;
 
     $urlRouterProvider.otherwise('translators');
   }]);

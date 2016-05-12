@@ -43,5 +43,8 @@
   "Translator": {
     "dataSource": "transagencyLoc",
     "public": true
+  },
+  "Email": {
+    "dataSource": "Email"
   }
 }
