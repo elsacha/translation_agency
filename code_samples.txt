@@ -1,0 +1,27 @@
+,
+  // "transagencyLoc": {
+  //   "host": "localhost",
+  //   "port": 27017,
+  //   "database": "translation_agency",
+  //   "password": "",
+  //   "name": "transagencyLoc",
+  //   "user": "",
+  //   "connector": "mongodb"
+  // },
+  // "Email": {
+  //   "name": "Email",
+  //   "defaultForType": "mail",
+  //   "connector": "mail",
+  //   "transports": [
+  //     {
+  //       "type": "SMTP",
+  //       "host": "smtp.gmail.com",
+  //       "secure": true,
+  //       "port": 465,
+  //       "auth": {
+  //         "user": "elsacha8@gmail.com",
+  //         "pass": "02cNrI23"
+  //       }
+  //     }
+  //   ]
+  // },

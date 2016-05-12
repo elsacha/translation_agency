@@ -33,15 +33,15 @@
     "public": false
   },
   "Product": {
-    "dataSource": "transagencyLoc",
+    "dataSource": "transagencyMlab",
     "public": true
   },
   "Customer": {
-    "dataSource": "transagencyLoc",
+    "dataSource": "transagencyMlab",
     "public": true
   },
   "Translator": {
-    "dataSource": "transagencyLoc",
+    "dataSource": "transagencyMlab",
     "public": true
   },
   "Email": {
