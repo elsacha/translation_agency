@@ -1,7 +1,8 @@
 /*@import "compass/css3";
 */
 body {
-  padding-top:70px
+  padding-top:70px;
+  padding-bottom:70px
 }
 .glyphicon-remove:hover {
   cursor:pointer
@@ -54,6 +55,12 @@ form {
 			color: white;
 		}
 	}
+}
+
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
 }
 
 

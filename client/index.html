@@ -28,45 +28,29 @@
     </div> -->
 
     
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span> 
-                </button>
-                <a class="navbar-brand" href="/">Glossaries</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-                <li ng-class="{ active: isActive('/translators')}"><a href="#/translators" ng-show="currentUser">Translators</a></li>
-                <li ng-class="{ active: isActive('/translators_search')}"><a href="#/translators_search" ng-show="currentUser">Find a translator</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#/sign-up" ng-hide="currentUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li>
-                  <a href="#/login" ng-hide="currentUser">
-                    <span class="glyphicon glyphicon-log-in"></span>
-                     Login
-                   </a>
-                 </li>
-                 <li>
-                  <a href="#/logout" ng-show="currentUser">
-                    <span class="glyphicon glyphicon-log-out"></span>
-                     Logout
-                   </a>
-                 </li>
-              </ul>
-            </div>
-  </div>
-</nav>
+  
 
-    <div class="container">
+    <!-- <div class="container">
       <div ui-view></div>
-     <!--  <div ng-view></div> -->
+    </div> -->
+<div class="container">
+    <div ui-view="navbar"></div>
+
+<div class="row"> 
+    <div class="col-xs-12 col-sm-8">
+
+        <div ui-view="content"></div>
+
     </div>
+
+    <div class="col-xs-12 col-sm-4">
+
+        <div ui-view="sidebar"></div>
+        
+    </div>
+</div>
+    <div ui-view="footer"></div>
+</div>
 
     <script src="vendor/jquery/dist/jquery.js"></script>
     <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>

@@ -6,58 +6,164 @@ var app = angular
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {
     $stateProvider
+      // .state('home', {
+      //   url: '/',
+      //   templateUrl: 'views/home.html',
+      //   controller: 'TabController'
+      // })
       .state('home', {
         url: '/',
-        templateUrl: 'views/home.html',
-        controller: 'TabController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/home.html',
+              controller  : 'TabController'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
+
       .state('translators', {
         url: '/translators',
-        templateUrl: 'views/translators.html',
-        controller: 'TranslatorsController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/translators.html',
+              controller  : 'TranslatorsController'
+          },
+          'sidebar': {
+              templateUrl : 'views/sidebar.html',
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
 
       .state('translators_search', {
         url: '/translators_search',
-        templateUrl: 'views/translators_search.html',
-        controller: 'TranslatorsSearchController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/translators_search.html',
+              controller  : 'TranslatorsSearchController'
+          },
+          'sidebar': {
+              templateUrl : 'views/sidebar.html',
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
 
       .state('translators_search_results', {
         url: '/translators_search_results',
-        templateUrl: 'views/translators_search_results.html',
-        controller: 'TranslatorsSearchController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/translators_search_results.html',
+              controller  : 'TranslatorsSearchController'
+          },
+          'sidebar': {
+              templateUrl : 'views/sidebar.html',
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
 
       .state('forbidden', {
         url: '/forbidden',
-        templateUrl: 'views/forbidden.html',
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/forbidden.html'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
       .state('login', {
         url: '/login',
-        templateUrl: 'views/login.html',
-        controller: 'AuthLoginController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/login.html',
+              controller: 'AuthLoginController'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
       .state('logout', {
         url: '/logout',
-        controller: 'AuthLogoutController'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/home.html',
+              controller: 'AuthLogoutController'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
 
       .state('sign-up', {
         url: '/sign-up',
-        templateUrl: 'views/sign-up-form.html',
-        controller: 'SignUpController',
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/sign-up-form.html',
+              controller: 'SignUpController'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
       .state('sign-up-success', {
         url: '/sign-up/success',
-        templateUrl: 'views/sign-up-success.html'
+        views: {  
+          'navbar': {
+              templateUrl : 'views/navbar.html',
+          },      
+          'content': {
+              templateUrl : 'views/sign-up-success.html'
+          },
+          'footer': {
+              templateUrl : 'views/footer.html',
+          }
+        }
       })
 
-      .state('translator_contact', {
-        url: '/translator_contact',
-        templateUrl: 'views/translator_contact.html'
-        //controller: 'ContactTranslatorController'
-      })
+      // .state('translator_contact', {
+      //   url: '/translator_contact',
+      //   templateUrl: 'views/translator_contact.html'
+      //   //controller: 'ContactTranslatorController'
+      // })
       ;
 
     $urlRouterProvider.otherwise('translators');
