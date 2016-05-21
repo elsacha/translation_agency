@@ -10,9 +10,11 @@ angular
           $rootScope.currentUser = {
             id: response.user.id,
             tokenId: response.id,
-            email: email
+            email: email,
+            username: response.username
           };
           console.log("current user id: " + $rootScope.currentUser.id);
+          console.log("current user email: " + $rootScope.currentUser.email);
         });
     }
 

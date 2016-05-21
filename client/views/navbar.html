@@ -23,6 +23,12 @@
                    </a>
                  </li>
                  <li>
+                    <a href="#" ng-show="currentUser">
+                      <span class="glyphicon glyphicon-user"></span>&nbsp;
+                      {{currentUser.email}}
+                    </a>
+                 </li>
+                 <li>
                   <a href="#/logout" ng-show="currentUser">
                     <span class="glyphicon glyphicon-log-out"></span>
                      Logout
