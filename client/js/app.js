@@ -166,7 +166,7 @@ var app = angular
       // })
       ;
 
-    $urlRouterProvider.otherwise('translators');
+    $urlRouterProvider.otherwise('/');
   }]);
 
 // var app = angular.module('app', ['ngRoute']);

@@ -30,6 +30,9 @@
       ],
       "required": true
     },
+    "picture": {
+      "type": "string"
+    },
     "dateJoined": {
       "type": "date"
     }
@@ -47,12 +50,6 @@
       "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$authenticated",
-      "permission": "ALLOW"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
       "permission": "ALLOW"
     }
   ],
